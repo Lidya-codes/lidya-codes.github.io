@@ -3,110 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lidya's Personal Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <title>Lidya's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff0f5;
+      background: #fdfdfd;
       color: #333;
     }
+
     header {
-      background: linear-gradient(135deg, #ffafcc, #ffc8dd);
-      color: #fff;
+      background: #fff;
+      border-bottom: 1px solid #eee;
       padding: 2em 1em;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      margin: 0.2em 0;
+      font-size: 2.8em;
+      margin-bottom: 0.2em;
+      color: #c2185b;
     }
+
+    header p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      background: #f8f8f8;
+      padding: 1em;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #c2185b;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
-      max-width: 850px;
+      max-width: 900px;
       margin: 2em auto;
       padding: 2em;
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(255, 175, 204, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
+
     h2 {
-      color: #d63384;
-      border-bottom: 2px solid #ffd6e0;
-      padding-bottom: 0.3em;
+      border-left: 4px solid #c2185b;
+      padding-left: 0.5em;
       margin-bottom: 1em;
+      font-weight: 500;
     }
+
     .project {
       margin-bottom: 2em;
     }
+
     .project h3 {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #6a0572;
+      font-size: 1.2em;
+      color: #333;
     }
-    .project-icon {
-      font-size: 1.5em;
+
+    .project p {
+      margin: 0.5em 0;
+      color: #555;
     }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.4em 0.8em;
+      background: #c2185b;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+
+    .project a:hover {
+      background: #a31549;
+    }
+
     footer {
       text-align: center;
-      padding: 1.5em;
-      background: linear-gradient(135deg, #ffafcc, #ffc8dd);
-      color: white;
+      padding: 2em;
+      background: #fafafa;
+      color: #888;
       font-size: 0.9em;
+      border-top: 1px solid #eee;
+      margin-top: 2em;
     }
-    a {
-      color: #d63384;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      section {
+        margin: 1em;
+        padding: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>💖 Lidya's Portfolio</h1>
-    <p>AI & Autonomous Systems Focused Projects ✨</p>
+    <h1>Lidya Adal</h1>
+    <p>AI & Autonomous Systems | Portfolio</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I’m <strong>Lidya</strong>, a passionate student exploring the world of  <strong>Artificial Intelligence </strong>and <strong>Autonomous Systems</strong>.💡</p>
+    <p>Hi! I’m <strong>Lidya</strong>, a student deeply interested in <strong>Artificial Intelligence</strong> and <strong>Autonomous Systems</strong>. I build intelligent tools that make life easier and more compassionate. I'm especially driven by applications in healthcare and human well-being.</p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
+
     <div class="project">
-      <h3><span class="project-icon">❤️‍🩹</span> Expert System for Early Heart Condition Detection</h3>
-      <p>A rule-based system that analyzes patient data to detect early signs of heart conditions and offer initial advice.</p>
-      <a href="https://expert-system-for-heart-condition-6dfmpsju8ayerf9khlzqnh.streamlit.app/" target="_blank">
-  💓 Try the Heart Condition Expert System</a>
+      <h3>❤️‍🩹 Expert System for Early Heart Condition Detection</h3>
+      <p>A rule-based AI that analyzes patient data to detect early signs of heart disease and provides helpful insights.</p>
+      <a href="https://expert-system-for-heart-condition-6dfmpsju8ayerf9khlzqnh.streamlit.app/" target="_blank">Try the Heart Condition Expert System</a>
     </div>
-      <div class="project">
-    <h3><span class="project-icon">💖</span> Self-Care Chatbot</h3>
-    <p>A supportive chatbot that listens to your feelings and gives self-care advice 💌</p>
-    <a href="https://lidya-codes.github.io/self-care-chatbot/" target="_blank">💓 Try the chatbot here</a>
-  </div>
+
     <div class="project">
-  <h3><span class="project-icon">🔥</span> Heat-Induced Kidney Stress Detection App</h3>
-  <p>AI-based prediction tool for early detection of kidney stress in individuals exposed to high heat — inspired by UAE-specific health challenges.</p>
-  <a href="http://10.45.49.124:8501" target="_blank">🚑 Try the Kidney Stress Risk Predictor</a>
-</div>
+      <h3>💖 Self-Care Chatbot</h3>
+      <p>A friendly chatbot that supports emotional well-being through self-care reminders and active listening.</p>
+      <a href="https://lidya-codes.github.io/self-care-chatbot/" target="_blank">Try the Chatbot</a>
+    </div>
+
+    <div class="project">
+      <h3>🔥 Heat-Induced Kidney Stress Detection</h3>
+      <p>A predictive tool to identify kidney stress due to heat exposure — inspired by local health challenges in the UAE.</p>
+      <a href="http://10.45.49.124:8501" target="_blank">Try the Kidney Stress Predictor</a>
+    </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>📧 Email: lidyaadal01@gmail.com</p>
-    <p>💼 <a href="https://linkedin.com/in/lidya-adal-9280861b3" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+    <p>📧 Email: <a href="mailto:lidyaadal01@gmail.com">lidyaadal01@gmail.com</a></p>
+    <p>💼 <a href="https://linkedin.com/in/lidya-adal-9280861b3" target="_blank">LinkedIn</a></p>
     <p>👩‍💻 <a href="https://github.com/lidya-codes" target="_blank">GitHub</a></p>
   </section>
 
   <footer>
-    <p>Made with 💕 by Lidya | © 2025</p>
+    <p>© 2025 Lidya Adal — All rights reserved.</p>
   </footer>
 </body>
 </html>
