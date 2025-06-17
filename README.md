@@ -4,7 +4,7 @@ This is the personal portfolio website of **Lidya Adal**, a Computer Science & A
 
 ## 🌐 Website Preview
 
-**Live site:** [View Portfolio](https://your-website-url.com)  
+**Live site:** [View Portfolio](https://lidya-codes.github.io/)  
 **Kidney Risk App:** [Try the App](http://10.45.49.124:8501)  
 **Heart Expert System:** [Streamlit Demo](https://expert-system-for-heart-condition-6dfmpsju8ayerf9khlzqnh.streamlit.app/)  
 **Self-Care Chatbot:** [GitHub Pages Demo](https://lidya-codes.github.io/self-care-chatbot/)
